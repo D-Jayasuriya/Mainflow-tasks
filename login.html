@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup & Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<style>
+    body{background-image: url('astra.jpeg');}
+</style>
+<body>
+    <div class="container">
+        <!-- Signup Form -->
+        <div id="signup">
+            <h2>Signup</h2>
+            <form id="signupForm">
+                <label for="signupUsername">Username</label>
+                <input type="text" id="signupUsername" placeholder="Enter username" required>
+                
+                <label for="signupEmail">Email</label>
+                <input type="email" id="signupEmail" placeholder="Enter email" required>
+                
+                <label for="signupPassword">Password</label>
+                <input type="password" id="signupPassword" placeholder="Enter password" required>
+                
+                <button type="submit">Signup</button>
+            </form>
+            <p>Already have an account? <a href="#" onclick="toggleForm()">Login</a></p>
+        </div>
+
+        <!-- Login Form -->
+        <div id="login" style="display: none;">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="loginUsername">Username</label>
+                <input type="text" id="loginUsername" placeholder="Enter username" required>
+                
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" placeholder="Enter password" required>
+                
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="#" onclick="toggleForm()">Signup</a></p>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
